@@ -13,8 +13,8 @@ class Role(db.Model):
 class Cake(db.Model):
     __tablename__ = 'cakes'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    name = db.Column(db.String(128))
-    file = db.Column(db.String(128), unique=True)
+    name = db.Column(db.String(64))
+    filename = db.Column(db.String(64), unique=True)
 
     def __repr__(self):
         return '<Cake %r>' % self.name
