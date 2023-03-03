@@ -9,6 +9,6 @@
 set -Eeuo pipefail
 set -x
 
-export FLASK_APP=hello.py
+export FLASK_APP=cake.py
 export FLASK_DEBUG=1
 flask run
